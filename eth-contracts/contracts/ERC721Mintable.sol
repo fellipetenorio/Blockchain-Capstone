@@ -1,3 +1,4 @@
+// DONE
 pragma solidity ^0.5.0;
 
 import 'openzeppelin-solidity/contracts/utils/Address.sol';
@@ -7,7 +8,6 @@ import 'openzeppelin-solidity/contracts/token/ERC721/IERC721Receiver.sol';
 import "./Oraclize.sol";
 
 contract Ownable {
-    //  TODO's
     //  1) create a private '_owner' variable of type address with a public getter function
     address public _owner;
     //  2) create an internal constructor that sets the _owner var to the creater of the contract 
@@ -20,7 +20,7 @@ contract Ownable {
     event NewOwnership(address from, address to);
     // 4
     function transferOwnership(address newOwner) public onlyOwner {
-        // TODO add functionality to transfer control of the contract to a newOwner.
+        // add functionality to transfer control of the contract to a newOwner.
         require(address(0) != newOwner, "Invalid new Owner");
         // make sure the new owner is a real address
         // emit before so the _owner keep the reference to old owner
@@ -30,7 +30,7 @@ contract Ownable {
     }
 }
 
-//  TODO's: Create a Pausable contract that inherits from the Ownable contract
+//  Create a Pausable contract that inherits from the Ownable contract
 contract Pausable is Ownable {
 //  1) create a private '_paused' variable of type bool
     bool private _paused = false;
@@ -509,7 +509,7 @@ contract ERC721Metadata is ERC721Enumerable, usingOraclize {
     }
 }
 
-//  TODO's: Create CustomERC721Token contract that inherits from the ERC721Metadata contract. You can name this contract as you please
+//  Create CustomERC721Token contract that inherits from the ERC721Metadata contract. You can name this contract as you please
 //  1) Pass in appropriate values for the inherited ERC721Metadata contract
 //      - make the base token uri: https://s3-us-west-2.amazonaws.com/udacity-blockchain/capstone/
 contract CustomERC721Token is ERC721Metadata("Real Estate Different", "RED", "https://s3-us-west-2.amazonaws.com/udacity-blockchain/capstone/") {
