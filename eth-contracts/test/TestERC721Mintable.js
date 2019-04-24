@@ -1,4 +1,4 @@
-var SquareVerifier = artifacts.require('verifier');
+var SquareVerifier = artifacts.require('Verifier');
 var ERC721MintableComplete = artifacts.require('CustomERC721Token');
 
 contract('TestERC721Mintable', accounts => {
@@ -43,15 +43,23 @@ contract('TestERC721Mintable', accounts => {
     // TODO
     describe('have ownership properties', function () {
         beforeEach(async function () { 
-            this.contract = await ERC721MintableComplete.new({from: account_one});
+            var vc = await SquareVerifier.new({from: account_one});
+            this.contract = await ERC721MintableComplete.new(vc.address, {from: account_one});
         })
 
         it('should fail when minting when address is not contract owner', async function () { 
-            
+            let result = true;
+            try {
+                await this.contract.mint(account_two, 1, {from: account_two});
+            } catch(e) {
+                result = false;
+            }
+            assert.equal(result, false, "Token minted");
         })
 
         it('should return contract owner', async function () { 
-            
+            let o = await this.contract._owner.call();
+            assert.equal(o, account_one, "Problem to recover the contract owner");
         })
 
     });
