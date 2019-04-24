@@ -13,7 +13,7 @@ contract Ownable {
     //  2) create an internal constructor that sets the _owner var to the creater of the contract 
     constructor () public { _owner = msg.sender; }
     //  3) create an 'onlyOwner' modifier that throws if called by any account other than the owner.
-    modifier onlyOwner() { require(msg.sender == _owner, "Caller need to be the owner for this actions");}
+    modifier onlyOwner() { require(msg.sender == _owner, "Caller need to be the owner for this actions");_;}
     //  4) fill out the transferOwnership function
     // see function transferOwnership
     //  5) create an event that emits anytime ownerShip is transfered (including in the constructor)

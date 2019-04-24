@@ -34,7 +34,7 @@ contract SolnSquareVerifier is CustomERC721Token {
         Solution memory sol = Solution({_index: index, _owner: owner});
         solutionsMapping[key] = sol;
         
-        emit SolutionAdded(user, index);
+        emit SolutionAdded(owner, index);
     }
 
     // Create a function to mint new NFT only after the solution has been verified
@@ -44,7 +44,7 @@ contract SolnSquareVerifier is CustomERC721Token {
         bytes32 key = keccak256(abi.encodePacked(a, a_p, b, b_p, c, c_p, h, k, input));
         
         //  - make sure the solution is unique (has not been used before)
-        require(solutionsMapping[key].owner == address(0), "Solution already used.");
+        require(solutionsMapping[key]._owner == address(0), "Solution already used.");
 
         addSolution(tokenId, to, key);
 
