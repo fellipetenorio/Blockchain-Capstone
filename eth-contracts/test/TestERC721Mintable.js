@@ -1,9 +1,11 @@
-var ERC721MintableComplete = artifacts.require('ERC721MintableComplete');
+var SquareVerifier = artifacts.require('verifier');
+var ERC721MintableComplete = artifacts.require('CustomERC721Token');
 
 contract('TestERC721Mintable', accounts => {
 
     const account_one = accounts[0];
     const account_two = accounts[1];
+    const account_three = accounts[2];
 
     describe('match erc721 spec', function () {
         beforeEach(async function () { 
