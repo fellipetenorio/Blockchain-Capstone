@@ -28519,7 +28519,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.6",
-  "updatedAt": "2019-04-25T04:27:17.896Z",
+  "updatedAt": "2019-04-25T04:43:03.511Z",
   "devdoc": {
     "methods": {
       "isApprovedForAll(address,address)": {

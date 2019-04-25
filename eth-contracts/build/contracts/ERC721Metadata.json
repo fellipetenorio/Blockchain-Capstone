@@ -28515,7 +28515,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.6",
-  "updatedAt": "2019-04-25T04:27:18.044Z",
+  "updatedAt": "2019-04-25T04:43:03.647Z",
   "devdoc": {
     "methods": {
       "isApprovedForAll(address,address)": {

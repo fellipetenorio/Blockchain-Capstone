@@ -11,7 +11,8 @@
         }
       ],
       "name": "Verified",
-      "type": "event"
+      "type": "event",
+      "signature": "0x3f3cfdb26fb5f9f1786ab4f1a1f9cd4c0b5e726cbdfc26e495261731aad44e39"
     },
     {
       "constant": false,
@@ -62,7 +63,8 @@
       ],
       "payable": false,
       "stateMutability": "nonpayable",
-      "type": "function"
+      "type": "function",
+      "signature": "0xfe01ff62"
     }
   ],
   "metadata": "{\"compiler\":{\"version\":\"0.5.2+commit.1df8f40c\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":false,\"inputs\":[{\"name\":\"a\",\"type\":\"uint256[2]\"},{\"name\":\"a_p\",\"type\":\"uint256[2]\"},{\"name\":\"b\",\"type\":\"uint256[2][2]\"},{\"name\":\"b_p\",\"type\":\"uint256[2]\"},{\"name\":\"c\",\"type\":\"uint256[2]\"},{\"name\":\"c_p\",\"type\":\"uint256[2]\"},{\"name\":\"h\",\"type\":\"uint256[2]\"},{\"name\":\"k\",\"type\":\"uint256[2]\"},{\"name\":\"input\",\"type\":\"uint256[2]\"}],\"name\":\"verifyTx\",\"outputs\":[{\"name\":\"r\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"name\":\"s\",\"type\":\"string\"}],\"name\":\"Verified\",\"type\":\"event\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/C/Projetos/BlockchainND/Blockchain-Capstone/eth-contracts/contracts/Verifier.sol\":\"Verifier\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Projetos/BlockchainND/Blockchain-Capstone/eth-contracts/contracts/Verifier.sol\":{\"keccak256\":\"0x469e0d2991501fa442a688101fa05c096de6cbaeb3b28bef3e37bd2a7f1e4935\",\"urls\":[\"bzzr://847c6aff8980f712f0688fb0910461ec87b62e8aa11cbf1a84aadaf2f74131cd\"]}},\"version\":1}",
@@ -84884,9 +84886,16 @@
     "name": "solc",
     "version": "0.5.2+commit.1df8f40c.Emscripten.clang"
   },
-  "networks": {},
+  "networks": {
+    "4": {
+      "events": {},
+      "links": {},
+      "address": "0x6a239CBeA2f32469B126e2d38FF3c1D11016A016",
+      "transactionHash": "0x799921f3a2938f55db18dfc6292bf791070a224c5d257778048ffc2b0d10295e"
+    }
+  },
   "schemaVersion": "3.0.6",
-  "updatedAt": "2019-04-25T04:24:49.454Z",
+  "updatedAt": "2019-04-25T04:44:24.189Z",
   "devdoc": {
     "methods": {}
   },
