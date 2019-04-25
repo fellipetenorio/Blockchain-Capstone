@@ -38,22 +38,33 @@ To deploy in rinkeby network:
 
 `truffle migrate --network rinkeby`
 
-OpenSea Link : https://rinkeby.opensea.io/category/realestatedifferent
-contract address: 0x9186EFe84eA992d98b746993389180daBf67cFD9
-account address: 0xFE95D4d08861fc5430a660CD94905a0E8Da9ed0b
-contract ABI: /build/contracts/SolnSquareVerifier.json
-Minted Token. Transaction: 0x2db07f958e889881ce6bdc0c2e4375661bba306eae1c6d5382f36b13e9da9671
-Minted Token. Transaction: 0x6815bbe88c80de15a15137c79b79cf3c625fde04ec12a6878ad938c9f760a7f5
-Minted Token. Transaction: 0xd45a80c2ab8dcd9fe008ef08527abfcb004f79113f1f846ad8d73cea7b04713a
-Minted Token. Transaction: 0xbcaa9e1a8676653065e6185fe331d29d3d5cc23f07daae3ed1f4ba849dea46a6
-Minted Token. Transaction: 0x0dec339923819f91f9bfea4d06daec59aeb7b31913125bc64302de5d6463a0ac
-Minted Token. Transaction: 0x24c8ce904472428757e3d08e61a949a6b736fb63e6a20e97392fbc789ed2a4b1
-Minted Token. Transaction: 0x823ddbf9a5a9ee614974845b0bf6fd4c604c910c458df04e352291a6e3f2bc27
-Minted Token. Transaction: 0x129a642ed18e1d155ac65600b5791947bf4b8aca44ca547528948c71c9f62613
-Minted Token. Transaction: 0x8453eb548e58af1c9a3cc30b34f458463a5ceed28e1036dc4a9762b2e29f87e0
-Minted Token. Transaction: 0x171d89fde631e806d3a8eaded60d8a2262c1892f31ff5653c14f175e45dbb8b8
+OpenSea MarketPlace Storefront: 
 
-OpenSea Link : https://rinkeby.opensea.io/category/realstatedifferent
+`https://rinkeby.opensea.io/category/realestatedifferentv2`
+
+Contract address: 
+`0x9186EFe84eA992d98b746993389180daBf67cFD9`
+
+Account address: `0xFE95D4d08861fc5430a660CD94905a0E8Da9ed0b`
+
+Contract ABI: 
+
+`/build/contracts/SolnSquareVerifier.json`
+
+## Tokens:
+
+Minted Token. Transaction: 0x2db07f958e889881ce6bdc0c2e4375661bba306eae1c6d5382f36b13e9da9671
+Minted Token. Transaction: 0xfd458af6c21517086d991faf04a39a678f5ce739a12d6786b95b8eaad45ccf4c
+Minted Token. Transaction: 0xc97b66cfd330a245ed4dfea45dac80655882d722cc93b39000b58cf77743cd4a - FAIL
+Minted Token. Transaction: 0xa92973beef8a560cc96fc9b199706cede778702c854b1ec39dce5580682da3f9
+Minted Token. Transaction: 0x50fbb1f1e7f4e0e55ab8876edb7fceadcdbf09a1877c69e7de2bb538e91fa347
+Minted Token. Transaction: 0xdd824da21ceefcae2d5ae0e5b4d72016beca5745591ba04dc89148fd8ffd7bd9
+Minted Token. Transaction: 0xe609f093d7b19c734837c532a34cc6e0f40d0d897ab6de8547b031237a30e666
+Minted Token. Transaction: 0xbf2fc200aa70e944b06b2f269ee72dcab40bae207a04c55115bd8d3ba64a0357
+Minted Token. Transaction: 0x07f127801fe6dfcbcf8a57d3bf58f9e4f52769d525ee1fc2465c6b114ca86a8e - FAIL
+Minted Token. Transaction: 0x6cfb8040d3bab13802c93c091e89ddfa77abd87071dc4bc2d4c5e6e6e48b1249
+
+OpenSea Link : https://rinkeby.opensea.io/assets/realestatedifferentv2
 
 change the configuration data in the `mintConfig.json` file and then run
 

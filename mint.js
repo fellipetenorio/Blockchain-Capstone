@@ -13,16 +13,20 @@ let OWNER_ADDRESS = config.OWNER_ADDRESS
 const NETWORK = config.NETWORK
 const NUM_TOKENS = 10
 const proof = [
-    require('./zokrates/code/square/proof'),
-    require('./zokrates/code/square/proof'),
-    require('./zokrates/code/square/proof'),
-    require('./zokrates/code/square/proof'),
-    require('./zokrates/code/square/proof'),
-    require('./zokrates/code/square/proof'),
-    require('./zokrates/code/square/proof'),
-    require('./zokrates/code/square/proof'),
-    require('./zokrates/code/square/proof'),
-    require('./zokrates/code/square/proof'),
+    // require('./zokrates/code/square/proof'),
+    // require('./zokrates/code/square/proof2'),
+    // require('./zokrates/code/square/proof3'),
+    // require('./zokrates/code/square/proof4'),
+    // require('./zokrates/code/square/proof5'),
+    // require('./zokrates/code/square/proof6'),
+    // require('./zokrates/code/square/proof7'),
+    // require('./zokrates/code/square/proof8'),
+    // require('./zokrates/code/square/proof9'),
+    // require('./zokrates/code/square/proof10'),
+    // require('./zokrates/code/square/proof11'),
+    // require('./zokrates/code/square/proof12'),
+    // require('./zokrates/code/square/proof13'),
+    require('./zokrates/code/square/proof14'),
     ];
 const CONTRACT_FILE = require('./eth-contracts/build/contracts/SolnSquareVerifier');
 const NFT_ABI = CONTRACT_FILE.abi;
