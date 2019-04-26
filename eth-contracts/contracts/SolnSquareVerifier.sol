@@ -46,6 +46,8 @@ contract SolnSquareVerifier is CustomERC721Token {
         //  - make sure the solution is unique (has not been used before)
         require(solutionsMapping[key]._owner == address(0), "Solution already used.");
 
+        require(verifier.verifyTx(a, a_p, b, b_p, c, c_p, h, k, input), "Invalid Proof.");
+
         addSolution(tokenId, to, key);
 
         //  - make sure you handle metadata as well as tokenSuplly

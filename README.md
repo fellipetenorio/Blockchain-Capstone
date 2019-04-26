@@ -45,6 +45,9 @@ OpenSea MarketPlace Storefront:
 Contract address: 
 `0x9186EFe84eA992d98b746993389180daBf67cFD9`
 
+Verifier address:
+``
+
 Account address: `0xFE95D4d08861fc5430a660CD94905a0E8Da9ed0b`
 
 Contract ABI: 
